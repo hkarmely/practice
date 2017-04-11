@@ -1,20 +1,24 @@
 <!doctype html>
 <html>
 <head>
-<title>A Basic Select</title>
+<title>Checkboxes</title>
 </head>
 <body>
-<h1>A Basic Select</h1>
+<h1>Checkboxes</h1>
 <hr>
 <form action=”#”>
-<fieldset>
-<legend>Form Information</legend>
-<div>
-<label for=”state”>State:</label>
-<select id=”state” name=”state”>
-<option value=”CA”>California</option>
-<option value=”WI”>Wisconsin</option>
-</select>
+  <fieldset>
+<legend>Pizza Information</legend>
+<div>Toppings: <br />
+<input type=”checkbox” id=”sausage”
+name=”toppings” value=”sausage”>
+<label for=”sausage”>Sausage</label><br />
+<input type=”checkbox” id=”pep”
+name=”toppings” value=”pep”>
+<label for=”pep”>Pepperoni</label><br />
+<input type=”checkbox” id=”mush”
+name=”toppings” value=”mush”>
+<label for=”mush”>Mushrooms</label><br />
 </div>
 </fieldset>
 </form>
