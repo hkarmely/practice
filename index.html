@@ -1,21 +1,45 @@
 <!doctype html>
 <html>
 <head>
-<title>Radio</title>
+<title>A Basic Form</title>
+<style type=”text/css”>
+.form-field {
+clear: both;
+padding: 10px;
+width: 350px;
+}
+.form-field label {
+float: left;
+width: 150px;
+text-align: right;
+}
+.form-field input {
+float: right;
+width: 150px;
+text-align: left;
+}
+#submit {
+text-align: center;
+}
+</style>
 </head>
 <body>
-<h1>Radio</h1>
+<h1>A Basic Form</h1>
 <hr>
 <form action=”#”>
 <fieldset>
-<legend>Pizza Information</legend>
-<div>Crust: <br />
-<input type=”radio” id=”deep”
-name=”crust” value=”deep”>
-<label for=”deep”>Deep Dish</label><br />
-<input type=”radio” id=”thin”
-name=”crust” value=”thin”>
-<label for=”thin”>Thin</label><br />
+<legend>Form Information</legend>
+<div class=”form-field”>
+<label for=”username”>Name:</label>
+<input type=”text” id=”username” name=”username”>
+</div>
+<div class=”form-field”>
+<label for=”email”>E-mail Address:</label>
+<input type=”text” id=”username” name=”email”>
+</div>
+<div class=”form-field”>
+<input id=”submit” type=”submit” name=”submit”
+value=”Send Form”>
 </div>
 </fieldset>
 </form>
